@@ -6,13 +6,13 @@ A simple multi-client chat application using TCP sockets in Python. Includes rea
 
 ## 🚀 Features
 
-- 🔗 TCP-based client-server communication
-- 🧍‍♀️ Multiple clients can join the same server
-- ⏰ Timestamps for every message
-- 🛡 Admin features:
-  - `/kick <username>` to remove users from the chat
-- ⚙️ Separate threads for sending & receiving messages
-- 🌈 Clean and readable message formatting
+- 🔗 TCP-based client-server communication  
+- 🧍‍♀️ Multiple clients can join the same server  
+- ⏰ Timestamps for every message  
+- 🛡️ Admin features:  
+  - `/kick <username>` to remove users from the chat  
+- ⚙️ Separate threads for sending & receiving messages  
+- 🌈 Clean and readable message formatting  
 
 ---
 
@@ -22,14 +22,30 @@ A simple multi-client chat application using TCP sockets in Python. Includes rea
 - `socket` (for network communication)
 - `threading` (for concurrency)
 - `datetime` (for timestamps)
-- `colorama` (for optional colored client output)
+- `colorama` (optional; for colored terminal output)
 
 ---
 
 ## 📦 Requirements
 
-- Python 3.x
-- `colorama` (optional):
+- Python 3.x  
+- Install `colorama` (optional):
 
 ```bash
 pip install colorama
+---
+
+## 🖥 How to Run
+
+### 1. Start the Server:
+```bash
+python server.py
+
+### 2. Start the Client:
+```bash
+python client.py
+### 3. Admin mode:
+```bash
+/kick <username>
+
+
